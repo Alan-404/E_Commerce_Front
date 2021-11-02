@@ -45,6 +45,7 @@ const AuthContextProvider = ({children}) => {
         try 
         {
             const response = await axios.post(`${apiUrl}/account/login`, loginInfor);
+            
             if (response.data.success)
             {
                 localStorage.setItem(LOCAL, response.data.accessToken);

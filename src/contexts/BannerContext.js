@@ -16,6 +16,7 @@ const BannerContextProvider = ({children}) => {
     const getBanners = async () => {
         try 
         {
+            
             const response = await axios.get(`${apiUrl}/banner`);
             if (response.data.success)
             {

@@ -37,6 +37,7 @@ const SlideShow = () => {
                     </Carousel.Item>
                 ))}
             </Carousel>
+
             <Image className = "myAd" src= {ADVERTISEMENT} fluid />
         </div>
         </>
